@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WE-pro - for programmers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">WE-pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web-Devlpoment</a></li>
+                            <li><a class="dropdown-item" href="#">Program-Language</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Node.Js</a></li>
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Log-In</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- log-in Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log-In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign-ip Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputcPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputcPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row featurettev d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Coding Is Just Like <span class="text-primary">FUN</span>
+                    For Good Coders As Well As Computers.</h2>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem totam vitae, qui
+                    expedita ab maxime corporis a ullam aut sint. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Enim nihil corporis similique adipisci explicabo? Nostrum debitis facere ad consequuntur
+                    explicabo.</p>
+            </div>
+            <div class="col-md-5">
+                <!-- <img src="https://source.unsplash.com/500x700/?tech" alt="" srcset=""> -->
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="laptop_phone.jfif" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurettev d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Ready Your Bag-pack for The Next <span
+                        class="text-primary">Coding</span> Journey That Will Wxite You.</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deserunt ipsa
+                    nihil tempore, inventore quo tenetur repudiandae quaerat adipisci doloremque. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Quas dolorem totam, ab modi culpa impedit? Laboriosam dolor
+                    sapiente vel est.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="bag.jfif" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurettev d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Everyday Is New Day Unil Your <span
+                        class="text-primary">Power</span> Understand It Right.</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi voluptatum sint
+                    ratione nihil tempora velit consequatur. Alias, non est? Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae fuga praesentium architecto odio pariatur tempora porro? Libero eligendi
+                    officiis ad.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="laptop_phone2.png" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+    </div>
+
+    <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted" id="hov">Home</a></li>
+            <li class="nav-item"><a href="contactUs.html" class="nav-link px-2 text-muted" id="hov">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" id="hov">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" id="hov">FAQs</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted" id="hov">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 WE-pro, Inc</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

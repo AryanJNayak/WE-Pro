@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    font-family: 'Rubik';
+}
+
+.navbar-collapse form input {
+    border: none !important;
+}
+
+.navbar-collapse form button {
+    border: none !important;
+}
+
+.navbar-collapse form button:hover {
+    background-color: #ffffff;
+}
+
+.carousel {
+    margin-top: 30px;
+    box-shadow: 0px 0px 6px 1px rgb(120, 69, 69);
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #542f2f;
+    box-shadow: 1px 1px 5px #df8585;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgb(32 255 226 / 64%);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* containers btn */
+.btn {
+    margin-top: 4px;
+    width: 149px;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 2px 2px rgb(120, 69, 69);
+}
+
+.blog-footer {
+    background-color: aqua;
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+
+hr {
+    margin: 3rem 0;
+}
+
+.featurette-heading {
+    font-family: 'Rubik', sans-serif;
+}
+
+.featurette-heading .lead {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.container .row .col-md-5 img {
+    box-shadow: 0px 0px 6px 0px rgb(120, 69, 69);
+}
+
+#cont {
+    width: 170px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    margin-bottom: 0px !important;
+
+}
+
+footer ul li a .text-muted {
+    color: #b79c9c !important;
+}
+
+.mx-2 .btn {
+    width: 83px;
+}
+
+.btn-dark:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.navbar .container-fluid .collapse .mx2 button:hover {
+    background-color: white !important;
+}
+
+#hov:hover {
+    border-radius: 2px;
+    background-color: rgb(47, 43, 43);
+    color: rgb(255, 255, 255) !important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.modal .modal-dialog .modal-content .modal-footer button:hover{
+    border: none;
+    box-shadow: none;
+    padding: 7.2px;
+}
+
+.modal .modal-dialog .modal-content .modal-body form button:hover{
+    border: none;
+    box-shadow: none;
+    padding: 7.2px;
+}
